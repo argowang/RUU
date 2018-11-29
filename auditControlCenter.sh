@@ -33,6 +33,12 @@ function runChromeTabAudit() {
     python /Users/mrdoggie/Desktop/Project/RUU/chromeTabAudit.py &
     echo $! > save_chrome_audit_pid.txt
 }
+
+function runChromeTabCountAudit() {
+    python /Users/mrdoggie/Desktop/Project/RUU/chromeTabCountAudit.py &
+    echo $! > save_chrometab_audit_pid.txt
+}
+
 function runFileWatcherAudit() {
     cd ~/dev/IDS_HW2/filewatcher/filewatcher/
     make
@@ -46,10 +52,12 @@ function cleanUp() {
     kill -9 `cat save_keylog_sleep_pid.txt`
     kill -9 `cat save_window_audit_pid.txt`
     kill -9 `cat save_chrome_audit_pid.txt`
+    kill -9 `cat save_chrometab_audit_pid.txt`
     kill -9 `cat save_keylog_pid.txt`
     kill -9 `cat save_sleep_pid.txt`
     rm save_window_audit_pid.txt
     rm save_chrome_audit_pid.txt
+    rm save_chrometab_audit_pid.txt
     rm save_keylog_heartbeat_pid.txt
     rm save_keylog_sleep_pid.txt
     rm save_keylog_pid.txt
@@ -73,6 +81,7 @@ do
     echo "\n---5min Port Audit milestone--- $current_date_time" >> log/portAudit.log;
     echo "\n---5min Window Audit milestone--- $current_date_time" >> log/windowAudit.log;
     echo "\n---5min Chrome Tab Audit milestone--- $current_date_time" >> log/chromeTab.log;
+    echo "\n---5min Chrome Tab Count Audit milestone--- $current_date_time" >> log/chromeTabCount.log;
     echo "Audit Completed for $current_date_time";
     sleep 300 &
     sleep_pid=$!
