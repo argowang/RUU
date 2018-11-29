@@ -32,3 +32,30 @@ startTime operation id activeAppName
 11:14:57PM on November 28, 2018 open 284048248 Amazon Student Programs
 11:14:57PM on November 28, 2018 open 284048260 servlet.FileDownload
 11:14:57PM on November 28, 2018 open 284048257 servlet.FileDownload
+
+---5min Chrome Tab Audit milestone--- 2018-11-29-11:40:19
+11:40:22AM on November 29, 2018 open 1945693068 Advanced Machine Learning Grading - jw3564@columbia.edu - LionMail Mail
+11:40:22AM on November 29, 2018 open 1945693071 Files
+11:40:22AM on November 29, 2018 open 1945693460 Michael Cho :: Using Python's Watchdog to monitor changes to a directory - Python - Servers and Scaling
+11:40:22AM on November 29, 2018 open 1945693684 Intersection() function Python - GeeksforGeeks
+11:40:22AM on November 29, 2018 open 1945693978 terminal - How can I list my open network ports with netstat? - Ask Different
+
+---5min Chrome Tab Audit milestone--- 2018-11-29-11:40:56
+11:40:59AM on November 29, 2018 open 1945693068 Advanced Machine Learning Grading - jw3564@columbia.edu - LionMail Mail
+11:40:59AM on November 29, 2018 open 1945693071 Files
+11:40:59AM on November 29, 2018 open 1945693460 Michael Cho :: Using Python's Watchdog to monitor changes to a directory - Python - Servers and Scaling
+11:40:59AM on November 29, 2018 open 1945693684 Intersection() function Python - GeeksforGeeks
+11:40:59AM on November 29, 2018 open 1945693978 terminal - How can I list my open network ports with netstat? - Ask Different
+
+---5min Chrome Tab Audit milestone--- 2018-11-29-11:45:56
+
+---5min Chrome Tab Audit milestone--- 2018-11-29-11:48:52
+11:48:55AM on November 29, 2018 open 1945693068 Advanced Machine Learning Grading - jw3564@columbia.edu - LionMail Mail
+11:48:55AM on November 29, 2018 open 1945693071 Files
+11:48:55AM on November 29, 2018 open 1945693460 Michael Cho :: Using Python's Watchdog to monitor changes to a directory - Python - Servers and Scaling
+11:48:55AM on November 29, 2018 open 1945693684 Intersection() function Python - GeeksforGeeks
+11:48:55AM on November 29, 2018 open 1945693978 terminal - How can I list my open network ports with netstat? - Ask Different
+11:49:04AM on November 29, 2018 open 1945694016 
+11:49:22AM on November 29, 2018 open 1945694020 HW2, SpeedGrader, STATGR5242_001_2018_3 - ADVANCED MACHINE LEARNING
+
+---5min Chrome Tab Audit milestone--- 2018-11-29-11:53:52

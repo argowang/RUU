@@ -9,7 +9,7 @@ from Quartz import (
     )
 
 class windowSensor(object):
-    def __init__(self, timeRange=0.5):
+    def __init__(self, timeRange=0.2):
         self.start = ""
         self.end = ""
         self.activeAppName = ""
@@ -28,6 +28,7 @@ class windowSensor(object):
         if not windowSensorFile.is_file():
             f = open("windowSensor.txt", "w")
             f.write("startTime endTime activeAppName\n")
+            f.close()
         if new_active_app_name != self.activeAppName:
             if self.activeAppName != "":
                 self.start = self.end
@@ -35,6 +36,7 @@ class windowSensor(object):
                 f = open("windowSensor.txt", "a")
                 line = self.start + " " + self.end + " " + self.activeAppName + "\n"
                 f.write(line)
+                f.close()
                 time.sleep(0.01)
         self.activeAppName = new_active_app_name
 

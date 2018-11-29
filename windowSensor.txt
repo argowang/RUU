@@ -205,3 +205,53 @@ startTime endTime activeAppName
 11:25:30PM on November 28, 2018 11:26:03PM on November 28, 2018 Google Chrome
 11:26:03PM on November 28, 2018 11:26:26PM on November 28, 2018 Terminal
 11:26:26PM on November 28, 2018 11:26:30PM on November 28, 2018 PyCharm
+
+---5min Window Audit milestone--- 2018-11-29-11:40:19
+ 11:40:26AM on November 29, 2018 iTerm2
+11:40:26AM on November 29, 2018 11:40:54AM on November 29, 2018 Code
+
+---5min Window Audit milestone--- 2018-11-29-11:40:56
+ 11:41:48AM on November 29, 2018 iTerm2
+11:41:48AM on November 29, 2018 11:43:19AM on November 29, 2018 Code
+11:43:19AM on November 29, 2018 11:43:29AM on November 29, 2018 iTerm2
+11:43:29AM on November 29, 2018 11:44:11AM on November 29, 2018 Code
+11:44:11AM on November 29, 2018 11:45:46AM on November 29, 2018 iTerm2
+
+---5min Window Audit milestone--- 2018-11-29-11:45:56
+11:45:46AM on November 29, 2018 11:46:19AM on November 29, 2018 Code
+11:46:19AM on November 29, 2018 11:46:30AM on November 29, 2018 iTerm2
+11:46:30AM on November 29, 2018 11:47:42AM on November 29, 2018 Code
+11:47:42AM on November 29, 2018 11:47:48AM on November 29, 2018 iTerm2
+11:47:48AM on November 29, 2018 11:48:46AM on November 29, 2018 Code
+
+---5min Window Audit milestone--- 2018-11-29-11:48:52
+ 11:48:58AM on November 29, 2018 iTerm2
+11:48:58AM on November 29, 2018 11:49:22AM on November 29, 2018 Google Chrome
+11:49:22AM on November 29, 2018 11:49:23AM on November 29, 2018 iTerm2
+11:49:23AM on November 29, 2018 11:49:24AM on November 29, 2018 Google Chrome
+11:49:24AM on November 29, 2018 11:49:25AM on November 29, 2018 Code
+11:49:25AM on November 29, 2018 11:49:26AM on November 29, 2018 iTerm2
+11:49:26AM on November 29, 2018 11:49:27AM on November 29, 2018 Google Chrome
+11:49:27AM on November 29, 2018 11:50:06AM on November 29, 2018 iTerm2
+11:50:06AM on November 29, 2018 11:50:27AM on November 29, 2018 Google Chrome
+11:50:27AM on November 29, 2018 11:50:32AM on November 29, 2018 Spark
+11:50:32AM on November 29, 2018 11:50:43AM on November 29, 2018 Google Chrome
+11:50:43AM on November 29, 2018 11:51:19AM on November 29, 2018 iTerm2
+11:51:19AM on November 29, 2018 11:51:20AM on November 29, 2018 Google Chrome
+11:51:20AM on November 29, 2018 11:51:32AM on November 29, 2018 iTerm2
+11:51:32AM on November 29, 2018 11:51:33AM on November 29, 2018 Calendar
+11:51:33AM on November 29, 2018 11:51:38AM on November 29, 2018 iTerm2
+11:51:38AM on November 29, 2018 11:51:40AM on November 29, 2018 Calendar
+11:51:40AM on November 29, 2018 11:51:42AM on November 29, 2018 WeChat
+11:51:42AM on November 29, 2018 11:51:43AM on November 29, 2018 IntelliJ IDEA
+11:51:43AM on November 29, 2018 11:51:45AM on November 29, 2018 Spark
+11:51:45AM on November 29, 2018 11:52:02AM on November 29, 2018 iTerm2
+11:52:02AM on November 29, 2018 11:52:03AM on November 29, 2018 Spark
+11:52:03AM on November 29, 2018 11:52:12AM on November 29, 2018 iTerm2
+11:52:12AM on November 29, 2018 11:52:53AM on November 29, 2018 Code
+11:52:53AM on November 29, 2018 11:53:14AM on November 29, 2018 iTerm2
+11:53:14AM on November 29, 2018 11:53:15AM on November 29, 2018 Finder
+
+---5min Window Audit milestone--- 2018-11-29-11:53:52
+11:53:15AM on November 29, 2018 11:53:55AM on November 29, 2018 iTerm2
+11:53:55AM on November 29, 2018 11:53:56AM on November 29, 2018 Finder

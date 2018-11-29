@@ -4,7 +4,7 @@ from pathlib import Path
 import copy
 
 class appSensor(object):
-    def __init__(self, timeRange=3):
+    def __init__(self, timeRange=1):
         self.chromeTabNum = 0
         self.currentSecond = datetime.now()
         self.oldChromeTabsSet = set()
@@ -35,10 +35,10 @@ class appSensor(object):
         if not windowSensorFile.is_file():
             f = open("appSensor.txt", "w")
             f.write("startTime operation id activeAppName \n")
+            f.close()
         f = open("appSensor.txt", "a")
         f.write(update)
-        print(self.oldChromeTabsSet, "old")
-        print(self.newChromeTabsSet, "new")
+        f.close()
         self.oldChromeTabsSet = copy.copy(self.newChromeTabsSet)
         self.newChromeTabsSet = set()
 
