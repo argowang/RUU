@@ -9,6 +9,16 @@ function runProcessAudit() {
     python /Users/mrdoggie/Desktop/Project/RUU/processAudit.py;
 }
 
+function runWindowAudit() {
+    python /Users/mrdoggie/Desktop/Project/RUU/windowAudit.py;
+
+}
+
+function runChromeTabAudit() {
+    python /Users/mrdoggie/Desktop/Project/RUU/chromeTabAudit.py;
+
+}
+
 function cleanUp() {
     echo "Ctrl-C caught...performing clean up"
     kill -9 `cat save_keylog_pid.txt`
@@ -25,6 +35,8 @@ startKeyLogger
 while true;
 do
     runProcessAudit;
+    runWindowAudit;
+    runChromeTabAudit;
     current_date_time="`date +%Y-%m-%d-%H:%M:%S`";
     echo "\n---5min KeyLogger milestone--- $current_date_time" >> keyStroke.txt;
     echo "Audit Completed for $current_date_time";

@@ -1,0 +1,34 @@
+startTime operation id activeAppName 
+11:14:57PM on November 28, 2018 open 284047761 Download Revealer Keylogger 2018 | Free keystroke logger for Windows
+11:14:57PM on November 28, 2018 open 284047961 GiacomoLaw/Keylogger: A simple keylogger for Windows, Linux and Mac
+11:14:57PM on November 28, 2018 open 284047964 Next steps with Oath: we've got some exciting news for you! - yh2967@columbia.edu - LionMail Mail
+11:14:57PM on November 28, 2018 open 284048251 Workday
+11:14:57PM on November 28, 2018 open 284048256 US+External+Offer+Letter+2018-11-28+16_30+PST.pdf
+11:14:57PM on November 28, 2018 open 284047967 meliot/filewatcher: A simple auditing utility for macOS
+11:14:57PM on November 28, 2018 open 284047973 hw4.pdf
+11:14:57PM on November 28, 2018 open 284047976 Video Library
+11:14:57PM on November 28, 2018 open 284047981 COMSW 4705_002_2018_3 - NATURAL LANGUAGE PROCESSING (169 unread)
+11:14:57PM on November 28, 2018 open 284047984 一亩三分地论坛-美国加拿大留学申请|工作就业|英语考试|学习生活信噪比最高的网站 -
+11:14:57PM on November 28, 2018 open 284048092 搜索 - 一亩三分地论坛 -
+11:14:57PM on November 28, 2018 open 284048067 Homework 4 - Analytical
+11:14:57PM on November 28, 2018 open 284048163 (2182封未读) 网易邮箱6.0版
+11:14:57PM on November 28, 2018 open 284048167 argowang/RUU: IDS Second Project Code Base
+11:14:57PM on November 28, 2018 open 284048170 python - AppKit not dynamically sensing the frontmost app - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048194 AppKit documentation - Google Search
+11:14:57PM on November 28, 2018 open 284048188 AppKit.NSWorkspace.sharedWorkspace Example
+11:14:57PM on November 28, 2018 open 284048191 NSWorkspace
+11:14:57PM on November 28, 2018 open 284048176 nitipit/appkit: Gnome desktop application framework based on Webkit, HTML5 and Python
+11:14:57PM on November 28, 2018 open 284048179 Python pip install appkit - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048185 Python Extension Packages for Windows - Christoph Gohlke
+11:14:57PM on November 28, 2018 open 284048202 objective c - Finding the Current Active Window in Mac OS X using Python - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048205 Python File Write
+11:14:57PM on November 28, 2018 open 284048208 python - How to modify a text file? - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048211 How can I make a Python script keep running after I close my shell? - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048214 macos - How to get active window title using Python in Mac? - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048232 FrontmostApplication - Xamarin
+11:14:57PM on November 28, 2018 open 284048235 appscript/TextEdit_demo.py at master · mattneub/appscript
+11:14:57PM on November 28, 2018 open 284048238 python - List of open browser tabs programmatically - Stack Overflow
+11:14:57PM on November 28, 2018 open 284048245 [Pythonmac-SIG] appscript
+11:14:57PM on November 28, 2018 open 284048248 Amazon Student Programs
+11:14:57PM on November 28, 2018 open 284048260 servlet.FileDownload
+11:14:57PM on November 28, 2018 open 284048257 servlet.FileDownload
