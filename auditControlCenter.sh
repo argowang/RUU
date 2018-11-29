@@ -1,7 +1,35 @@
+#!/bin/sh
+function startKeyLogger() {
+    keylogger keyStroke.txt &
+    # make sure the process is terminated later
+    echo $! > save_keylog_pid.txt
+}
+
+function runProcessAudit() {
+    python /Users/mrdoggie/Desktop/Project/RUU/processAudit.py;
+}
+
+function cleanUp() {
+    echo "Ctrl-C caught...performing clean up"
+    kill -9 `cat save_keylog_pid.txt`
+    kill -9 `cat save_sleep_pid.txt`
+    rm save_keylog_pid.txt
+    rm save_sleep_pid.txt
+    exit 2
+}
+
+trap cleanUp SIGINT
+
+startKeyLogger
+
 while true;
 do
-    python /Users/mrdoggie/Desktop/Project/RUU/processAudit.py;
+    runProcessAudit;
     current_date_time="`date +%Y-%m-%d-%H:%M:%S`";
-    echo "Audit Completed for $current_date_time"
-    sleep 300;
+    echo "\n---5min KeyLogger milestone--- $current_date_time" >> keyStroke.txt;
+    echo "Audit Completed for $current_date_time";
+    sleep 300 &
+    sleep_pid=$!
+    echo $sleep_pid > save_sleep_pid.txt
+    wait $sleep_pid
 done
