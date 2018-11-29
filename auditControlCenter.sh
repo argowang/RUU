@@ -33,6 +33,12 @@ function runChromeTabAudit() {
     python /Users/mrdoggie/Desktop/Project/RUU/chromeTabAudit.py &
     echo $! > save_chrome_audit_pid.txt
 }
+function runFileWatcherAudit() {
+    cd ~/dev/IDS_HW2/filewatcher/filewatcher/
+    make
+    sudo ./bin/filewatcher -f .pdf -f .txt -f .jpg -f .png -f .jpeg -f .doc >> fileAudit.log
+
+}
 
 function cleanUp() {
     echo "Ctrl-C caught...performing clean up"
