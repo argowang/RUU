@@ -10,12 +10,14 @@ function startKeyLogger() {
 function keyloggerHeartBeat() {
     while true;
     do
-        echo "\n***10s KeyLogger Milestone***" >> log/keyStroke.log
-        sleep 10 &
+        echo "\n***5s KeyLogger Milestone***" >> log/keyStroke.log
+        sleep 5 &
         keylog_sleep_pid=$!
         echo $keylog_sleep_pid > save_keylog_sleep_pid.txt
         wait $keylog_sleep_pid
     done
+function auditPort() {
+    lsof -Pn -i4 | grep -v "CLOSE" | tail -n +2 | awk '{print $1, $2, $8, $9}' >> log/portAudit.log
 }
 
 function runProcessAudit() {
@@ -59,8 +61,10 @@ startKeyLogger
 while true;
 do
     runProcessAudit;
+    auditPort;
     current_date_time="`date +%Y-%m-%d-%H:%M:%S`";
     echo "\n---5min KeyLogger milestone--- $current_date_time" >> log/keyStroke.log;
+    echo "\n---5min Port Audit milestone--- $current_date_time" >> log/portAudit.log;
     echo "\n---5min Window Audit milestone--- $current_date_time" >> log/windowAudit.log;
     echo "\n---5min Chrome Tab Audit milestone--- $current_date_time" >> log/chromeTab.log;
     echo "Audit Completed for $current_date_time";

@@ -35,6 +35,8 @@ class windowSensor(object):
             if self.activeAppName != "":
                 self.start = self.end
                 self.end = datetime.now().strftime("%I:%M:%S%p on %B %d, %Y")
+                if self.start == "":
+                    return
                 f = open(LOGFILE_DIR, "a")
                 line = self.start + " " + self.end + " " + self.activeAppName + "\n"
                 f.write(line)
