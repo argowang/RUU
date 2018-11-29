@@ -9,7 +9,7 @@ def getPIDS():
     unixTime = time.time()
     formatTime = datetime.utcfromtimestamp(unixTime).strftime('%Y-%m-%d-%H:%M:%S')
     pids = psutil.pids()
-    f = open("processLog.txt", "a+")
+    f = open("log/processLog.txt", "a+")
     f.write(str(unixTime) + " " + formatTime + " "+ " ".join(str(x) for x in pids) + "\n")
     f.close()
 

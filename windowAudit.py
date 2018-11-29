@@ -8,6 +8,8 @@ from Quartz import (
         kCGNullWindowID
     )
 
+LOGFILE_DIR = "log/windowAudit.log"
+
 class windowSensor(object):
     def __init__(self, timeRange=0.2):
         self.start = ""
@@ -24,16 +26,16 @@ class windowSensor(object):
     def monitor(self):
         new_active_app_name = NSWorkspace.sharedWorkspace().activeApplication()['NSApplicationName']
         # Write to File
-        windowSensorFile = Path("windowSensor.txt")
+        windowSensorFile = Path(LOGFILE_DIR)
         if not windowSensorFile.is_file():
-            f = open("windowSensor.txt", "w")
+            f = open(LOGFILE_DIR, "w")
             f.write("startTime endTime activeAppName\n")
             f.close()
         if new_active_app_name != self.activeAppName:
             if self.activeAppName != "":
                 self.start = self.end
                 self.end = datetime.now().strftime("%I:%M:%S%p on %B %d, %Y")
-                f = open("windowSensor.txt", "a")
+                f = open(LOGFILE_DIR, "a")
                 line = self.start + " " + self.end + " " + self.activeAppName + "\n"
                 f.write(line)
                 f.close()

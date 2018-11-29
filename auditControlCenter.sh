@@ -1,6 +1,6 @@
 #!/bin/sh
 function startKeyLogger() {
-    keylogger keyStroke.txt &
+    keylogger ./log/keyStroke.log &
     # make sure the process is terminated later
     echo $! > save_keylog_pid.txt
 }
@@ -34,6 +34,7 @@ function cleanUp() {
 
 trap cleanUp SIGINT
 
+mkdir -p log/
 runWindowAudit;
 runChromeTabAudit;
 startKeyLogger
@@ -42,9 +43,9 @@ while true;
 do
     runProcessAudit;
     current_date_time="`date +%Y-%m-%d-%H:%M:%S`";
-    echo "\n---5min KeyLogger milestone--- $current_date_time" >> keyStroke.txt;
-    echo "\n---5min Window Audit milestone--- $current_date_time" >> windowSensor.txt;
-    echo "\n---5min Chrome Tab Audit milestone--- $current_date_time" >> appSensor.txt;
+    echo "\n---5min KeyLogger milestone--- $current_date_time" >> log/keyStroke.log;
+    echo "\n---5min Window Audit milestone--- $current_date_time" >> log/windowAudit.log;
+    echo "\n---5min Chrome Tab Audit milestone--- $current_date_time" >> log/chromeTab.log;
     echo "Audit Completed for $current_date_time";
     sleep 300 &
     sleep_pid=$!

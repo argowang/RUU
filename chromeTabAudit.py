@@ -3,6 +3,8 @@ from datetime import datetime
 from pathlib import Path
 import copy
 
+LOGFILE_DIR = "log/chromeTab.log"
+
 class appSensor(object):
     def __init__(self, timeRange=1):
         self.chromeTabNum = 0
@@ -24,19 +26,19 @@ class appSensor(object):
         update = ""
         for tab in self.newChromeTabs:
             if tab.id() not in self.oldChromeTabsSet:
-                update += self.startTime + " open " + str(tab.id()) + " " + tab.title() + "\n"
+                update += self.startTime + " open " + str(tab.id()) + "\n"
             self.newChromeTabsSet.add(tab.id())
         for oldTab in self.oldChromeTabsSet:
             if oldTab not in self.newChromeTabsSet:
-                update += self.startTime + " close " + str(tab.id()) + " " + oldTab.title() + "\n"
+                update += self.startTime + " close " + str(oldTab) + "\n"
 
         # Append to file
-        windowSensorFile = Path("appSensor.txt")
+        windowSensorFile = Path(LOGFILE_DIR)
         if not windowSensorFile.is_file():
-            f = open("appSensor.txt", "w")
+            f = open(LOGFILE_DIR, "w")
             f.write("startTime operation id activeAppName \n")
             f.close()
-        f = open("appSensor.txt", "a")
+        f = open(LOGFILE_DIR, "a")
         f.write(update)
         f.close()
         self.oldChromeTabsSet = copy.copy(self.newChromeTabsSet)
