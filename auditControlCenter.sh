@@ -23,27 +23,28 @@ function auditPort() {
 }
 
 function runProcessAudit() {
-    python /Users/mrdoggie/Desktop/Project/RUU/processAudit.py
+    python processAudit.py
 }
 
 function runWindowAudit() {
-    python /Users/mrdoggie/Desktop/Project/RUU/windowAudit.py &
+    python windowAudit.py &
     echo $! > save_window_audit_pid.txt
 }
 
 function runChromeTabAudit() {
-    python /Users/mrdoggie/Desktop/Project/RUU/chromeTabAudit.py &
+    python chromeTabAudit.py &
     echo $! > save_chrome_audit_pid.txt
 }
 
 function runChromeTabCountAudit() {
-    python /Users/mrdoggie/Desktop/Project/RUU/chromeTabCountAudit.py 
+    python chromeTabCountAudit.py 
 }
 
 function runFileWatcherAudit() {
-    cd ~/dev/IDS_HW2/filewatcher/filewatcher/
-    make
-    ./bin/filewatcher -f .pdf -f .txt -f .jpg -f .png -f .jpeg -f .doc >> log/fileAudit.log
+    sudo unbuffer opensnoop -v -n Preview | tee -a log/preview.log &
+    echo $! > save_preview_pid.txt
+    sudo unbuffer opensnoop -v -n TextEdit | tee -a log/textedit.log &
+    echo $! > save_textedit_pid.txt
 }
 
 function cleanUp() {
@@ -54,9 +55,13 @@ function cleanUp() {
     kill -9 `cat save_chrome_audit_pid.txt`
     kill -9 `cat save_keylog_pid.txt`
     kill -9 `cat save_sleep_pid.txt`
+    kill -9 `cat save_preview_pid.txt`
+    kill -9 `cat save_textedit_pid.txt`
+    sudo pkill -f opensnoop
+    rm save_preview_pid.txt
+    rm save_textedit_pid.txt
     rm save_window_audit_pid.txt
     rm save_chrome_audit_pid.txt
-    rm save_chrometab_audit_pid.txt
     rm save_keylog_heartbeat_pid.txt
     rm save_keylog_sleep_pid.txt
     rm save_keylog_pid.txt
@@ -70,6 +75,7 @@ mkdir -p log/
 runWindowAudit;
 runChromeTabAudit;
 startKeyLogger
+runFileWatcherAudit
 
 while true;
 do
@@ -82,6 +88,8 @@ do
     echo "\n---5min Window Audit milestone--- $current_date_time" >> log/windowAudit.log;
     echo "\n---5min Chrome Tab Audit milestone--- $current_date_time" >> log/chromeTab.log;
     echo "\n---5min Chrome Tab Count Audit milestone--- $current_date_time" >> log/chromeTabCount.log;
+    echo "\n---5min Preview Audit milestone--- $current_date_time" >> log/preview.log;
+    echo "\n---5min TextEdit Audit milestone--- $current_date_time" >> log/textedit.log; 
     echo "Audit Completed for $current_date_time";
     sleep 300 &
     sleep_pid=$!
