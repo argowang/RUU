@@ -4,5 +4,4 @@ log/
 data_processing/*.csv
 data_processing/backup_algo/
 data_processing/.ipynb_checkpoints
-data_processing/*.ipynb
 
