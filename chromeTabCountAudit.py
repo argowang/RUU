@@ -17,7 +17,10 @@ def monitorTabCount():
         f.write(str(count))
         f.close()
     except Exception as e:
-        pass
+        # Append 0 to file
+        f = open(LOGFILE_DIR, "a+")
+        f.write(str(0))
+        f.close()
 
 
 monitorTabCount()
