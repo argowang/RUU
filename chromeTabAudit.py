@@ -14,8 +14,11 @@ class appSensor(object):
         while True:
             now = datetime.now()
             if int((now - self.currentSecond).seconds) >= timeRange:
-                self.monitorChromeTabNum()
-                self.currentSecond = now
+                try:
+                    self.monitorChromeTabNum()
+                    self.currentSecond = now
+                except Exception as e:
+                    pass
 
 
     def monitorChromeTabNum(self):

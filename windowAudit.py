@@ -39,7 +39,7 @@ class windowSensor(object):
                     return
                 f = open(LOGFILE_DIR, "a")
                 line = self.start + " " + self.end + " " + self.activeAppName + "\n"
-                f.write(line)
+                f.write(line.encode('utf-8'))
                 f.close()
                 time.sleep(0.01)
         self.activeAppName = new_active_app_name
